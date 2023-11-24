@@ -7,7 +7,7 @@ class ToDoProject{
   }
 
   getProject(projectName = "default"){
-    return this.project = toDoList.todoList.filter(item => item.project == projectName);
+    return this.project = toDoList.todoList.filter(item => item.projectName == projectName);
   }
 
 }

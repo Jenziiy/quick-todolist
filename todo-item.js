@@ -1,6 +1,6 @@
 module.exports = class TodoItem {
-  constructor(title, description, project = "default"){
-    this.project = project;
+  constructor(title, description, projectName = "default"){
+    this.projectName = projectName;
     this.title = title;
     this.description = description;
     this.checked = false;
@@ -9,11 +9,11 @@ module.exports = class TodoItem {
   }
 
   getProject(){
-    return this.project;
+    return this.projectName;
   }
 
   setProject(name){
-    this.project = name;
+    this.projectName = name;
     console.log(`project name has been set to ${name}`);
   }
 
