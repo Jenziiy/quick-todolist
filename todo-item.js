@@ -1,10 +1,10 @@
 module.exports = class TodoItem {
-  constructor(title, description, checked = false, startDate ){
-    this.project = "default";
+  constructor(title, description, project = "default"){
+    this.project = project;
     this.title = title;
     this.description = description;
-    this.checked = checked
-    this.startDate = new Date().toLocaleString().split(",")[0];
+    this.checked = false;
+    this.creationDate = new Date().toLocaleString().split(",")[0];
     this.endDate = null;
   }
 
